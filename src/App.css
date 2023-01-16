@@ -1,0 +1,38 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app__todo {
+  padding-left: 0;
+  display: grid;
+  gap: 15px;
+}
+
+.app__todo-item {
+  list-style-type: none;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.app__todo-delete {
+  font-size: 15px;
+  color: red;
+  padding: 5px;
+  cursor: pointer;
+  transform: translateY(3px);
+}
+
+.app__todo-text {
+  font-size: 30px;
+}
+
+.app__todo-check {
+  margin: 0;
+}
+
+.app__todo-check:checked + span {
+  text-decoration: line-through;
+}
